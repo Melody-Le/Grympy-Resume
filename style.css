@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&family=Walter+Turncoat&display=swap');
+
+/* color: #83B5BD #db5134;
+color text: #2f8f9d 
+text gray: #868e96  #495057
+
+greycolor: #d9d9d9  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 12px;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  border-top: 10px solid #83b5bd;
+  border-bottom: 10px solid #83b5bd;
+  color: #868e96;
+  font-size: 1.5rem;
+  position: relative;
+}
+h3 {
+  font-size: 3rem;
+  color: #2f8f9d;
+  margin-bottom: 1rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30rem;
+  padding: 1rem 2rem;
+  background-color: #d9d9d9;
+  margin-bottom: 2rem;
+}
+.header img {
+  display: inline-block;
+  border: 0.5rem solid;
+  border-color: white;
+  max-width: 35%;
+  height: 80%;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.header nav h1 {
+  font-family: 'Walter Turncoat', sans-serif;
+  font-weight: 600;
+  font-size: 6rem;
+  text-align: right;
+  text-transform: uppercase;
+  color: white;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  list-style: none;
+}
+nav ul li {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  width: 100%;
+  height: 24rem;
+  margin: 3rem auto 6rem auto;
+}
+
+.bio img {
+  height: 24rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.5rem solid #83b5bd;
+}
+
+.bio-text p {
+  font-size: 1.5rem;
+  color: #868e96;
+  margin-bottom: 0.3rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  background-color: #83b5bd;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+  border-radius: 2.4rem;
+  padding: 1.2rem 3.5rem;
+  margin-top: 1rem;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #2f8f9d;
+  color: #fff;
+}
+
+.job-container {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.job {
+  display: flex;
+  gap: 2rem;
+}
+.job > * {
+  flex: 1;
+}
+.job-detail h4 {
+  font-size: 1.8rem;
+  color: #495057;
+  margin-bottom: 1rem;
+}
+
+.job-photo {
+  display: inline-block;
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  border: none;
+  border-radius: 1rem;
+}
+
+.toy {
+  object-fit: contain;
+}
+
+.wiki-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background-color: #83b5bd;
+  color: #fff;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.wiki-photo {
+  display: inline-block;
+  width: 30%;
+  /* height: 25rem; */
+  object-fit: cover;
+  border: 0.2rem solid white;
+  border-radius: 1rem;
+}
+.wiki h3 {
+  color: white;
+  font-family: 'Walter Turncoat', sans-serif;
+}
+.wiki p {
+  margin-bottom: 1rem;
+}
+p.source-quote {
+  font-style: italic;
+}
+p.rumor {
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Walter Turncoat', sans-serif;
+  /* font-weight: bold; */
+}
+
+.video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 2rem;
+  height: 30rem;
+  max-width: 70%;
+  margin: 3rem auto;
+}
+.video h3 {
+  flex: 1 0 100%;
+}
+
+.video iframe {
+  border-radius: 2rem;
+  flex: 1;
+  height: 80%;
+}
+
+button {
+  position: fixed;
+  display: inline-block;
+  left: 2rem;
+  bottom: 2rem;
+  background-color: #db5134;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+.mail a:link,
+.mail a:visited {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.footer P {
+  color: #db5134;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+a:link {
+  color: #db5134;
+  text-decoration: none;
+}
+a:visited {
+  color: #db5134;
+}
+a:hover {
+  font-weight: bold;
+}
+
+/* PROJECT FILE */
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  /* height: 100%; */
+  /* background-color: blue; */
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  /* background-color: antiquewhite; */
+  padding: 5rem 2rem;
+  /* height: 100rem; */
+}
+h2 {
+  font-size: 4rem;
+  color: #db5134;
+}
+.project h3 {
+  font-size: 2rem;
+}
+
+.project-content img {
+  display: flex;
+  align-items: flex-end;
+  flex: 1;
+  width: 100%;
+  /* height: 50%; */
+  object-fit: contain;
+}
